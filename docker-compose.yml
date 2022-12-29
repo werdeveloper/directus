@@ -8,7 +8,7 @@ services:
       - 9055:8055
     volumes:
       - /home/directus_dev_backend/backend/portal:/usr/app
-      - nm_directus_proj:/usr/app/node_modules
+      - directus_proj:/usr/app/node_modules
     environment:
       - TZ=Asia/Kolkata
 
