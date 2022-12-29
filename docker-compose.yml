@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  smds:
+    container_name: directus_portal
+    restart: always
+    image: directus_portal:1.0.0
+    ports:
+      - 9055:8055
+    volumes:
+      - /home/directus_dev_backend/backend/portal:/usr/app
+      - nm_directus_proj:/usr/app/node_modules
+    environment:
+      - TZ=Asia/Kolkata
+
+volumes:
+  directus_proj:

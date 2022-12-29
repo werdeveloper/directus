@@ -28,8 +28,9 @@ const articleValodation = async (req, res, next) => {
     // console.log(result);
     if (result === false) {
         const allErrors = validation.errors.all();
-        const allErrorsJSONString = JSON.stringify(allErrors);
-        return allErrorsJSONString;
+        /* const allErrorsJSONString = JSON.stringify(allErrors);
+        return allErrorsJSONString; */
+        return allErrors;
     }
 }
 module.exports = {
